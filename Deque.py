@@ -20,15 +20,17 @@ class Deque:
          
          
     def insert_last(self,elemento:Any) -> None:
-          self.__data.insert(0,elemento)
+          self.__data.append(elemento)
 
 
     def size(self) -> int:
         return len(self.__data)
 
+    def remove_first(self) -> None:
+         self.__data.pop()
 
     def remove_last(self) -> None:
-         self.__data.pop()
+         self.__data.pop(0)
          
     def fist(self) -> Any:
          return self.__data[0]
@@ -43,9 +45,9 @@ class Deque:
 if __name__ == "__main__":
      
   pilhalista = Deque()
-  pilhalista.insert_first(1)
-  pilhalista.insert_first(2)
-  pilhalista.insert_first(4)
+  pilhalista.insert_last(1)
+  pilhalista.insert_last(2)
+  pilhalista.insert_last(4)
 
 
 
