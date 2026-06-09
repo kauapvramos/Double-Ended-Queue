@@ -1,12 +1,7 @@
 from typing import Any, List
 
 
-
-
 class Deque:
-
-
-
 
     def __init__(self) -> None:
         self.__data: List[Any] = []
